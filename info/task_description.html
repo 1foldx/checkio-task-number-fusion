@@ -1,50 +1,39 @@
 <!-- Describe task in general -->
 
 <p>
-    Check if the given number is even or not. Your function should return {% if interpreter.slug == "js-node" %}true{% else %}True{% endif %} if the number is even, and{% if interpreter.slug == "js-node" %}false{% else %}False{% endif %} if the number is odd.
-</p>
-
-<!-- Explain input and output values -->
-<p>
-    <strong>Input: </strong> An int.
+    On souhaite fusionner les chiffres deux entiers
 </p>
 
 <p>
-    <strong>Output: </strong> A bool. 
+    On vous propose deux entiers.
+    Pour cette tache, vous devez retourner un entier qui contient les chiffres des entiers passés en argument.
+    Pour ce faire vous devez décomposer les deux entiers (par divisions successives), puis composer le résultat en alternant les chiffres
+    des deux entiers.
+    Exemple:
+    pour 1234 et 8765  {1, 2, 3, 4} et {5, 6, 7, 8} sont les chiffes qui composent les entier donnés, le résultat sera donc
+    <b>18273645</>.
 </p>
 
 
-<!-- Give some usage examples -->
+<p><strong>Saisie: </strong>Un entier.</p>
+
+<p><strong>Sortie: </strong>Deux entiers.</p>
 <div class="for_info_only">
-    <p>
-        <strong>Example:</strong>
-    </p>
+    <p><strong>Exemple:</strong></p>
+<pre class="brush: python">
+fusion(20, 20) == 2200
+fusion(99,11) == 9191
+fusion(1234, 8765) == 18273645
+fusion(9, 0) == 90
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">isEven(2) == true
-isEven(5) == false
-isEven(0) == true
 </pre>
-{% else %}
-<pre class="brush: python">is_even(2) == True
-is_even(5) == False
-is_even(0) == True
-</pre>
-{% endif %}
 </div>
-
-
-<!-- Here you can explain how it can be used in development -->
-<!-- The section is optional -->
-<p class="for_info_only">
-
-    <strong>How it’s used: </strong>
-    <i>(math is used everywhere)</i>
+<p>
+    <strong>Intérêt de la mission</strong>
+    Cette mission vous aidera à comprendre comment manipuler des entiers et comment utiliser un système de numération positionnel.
 </p>
 
-<!-- Here you can explain some constraints for input-->
-<!-- The section is optional -->
 <p>
-    <strong>Precondition:</strong>
-    <i>both given ints should be between -1000 and 1000</i>
+    <strong>Précondition :<br></strong>
+    0 <= X<br> les deux nombres ont le même nombre de chiffres.
 </p>
