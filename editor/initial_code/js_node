@@ -1,17 +1,17 @@
 import assert from "assert";
 
-function isEven(num: number): boolean {
+function fusion(a: number, b: number): number {
     // your code here
-    return false;
+    return a+b;
 }
 
 console.log('Example:');
-console.log(isEven(2));
+console.log(fusion(2, 0));
 
 // These "asserts" are used for self-checking
-assert.equal(isEven(2), true);
-assert.equal(isEven(5), false);
-assert.equal(isEven(0), true);
+assert.equal(fusion(2, 0), 20);
+assert.equal(isEven(0, 5), 5);
+assert.equal(isEven(10, 89), 1809);
 
 console.log("Coding complete? Click 'Check' to earn cool rewards!");
     
