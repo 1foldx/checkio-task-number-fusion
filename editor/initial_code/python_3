@@ -1,5 +1,6 @@
 def fusion(a: int, b: int) -> int:
     # using a python list as a stack
+    res = a + b # fusion is not simple addition
     return res
 
 
@@ -9,6 +10,6 @@ if __name__ == '__main__':
 
     # These "asserts" are used for self-checking and not for an auto-testing
     assert fusion(1234, 8765) == 18273645
-    assert fusion(1111, 8765) == 81716151
+    assert fusion(8765, 1111) == 81716151
     assert fusion(1, 0) == 10
     print("Coding complete? Click 'Check' to earn cool rewards!")
