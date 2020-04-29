@@ -1,1 +1,1 @@
-checkio --domain py autofillrepo --py-function is_even --js-function isEven .
+checkio --domain py autofillrepo --py-function fusion --js-function fusion .
