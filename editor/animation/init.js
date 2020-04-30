@@ -8,8 +8,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             multipleArguments: true,
             functions: {
-                python: 'is_even',
-                js: 'isEven'
+                python: 'fusion',
+                js: 'fusion'
             }
         });
         io.start();
